@@ -17,13 +17,15 @@ During 4 phases, a compiler for [LogicPL programming language](/LogicPL%20Docume
 ## Projects:
 
 ### Phase 1
-Implementation of lexical and syntax analyzer.
+* Lexical and syntax analyzer
 
 ### Phase 2
-Build AST and implementation of name analyzer.
+* Making AST Tree In Grammer
+* AST Tree Nodes
+* Name Analyzing
 
 ### Phase 3
-Implementation of type analyzer.
+- Type checking
 
 ### Phase 4
-Implementation of code generator.
+- Code generation using `Jasmin`

@@ -1,15 +1,5 @@
-// Generated from /home/yektanet/Edu/TA/PLC/CA2V8/src/main/grammar/LogicPL.g4 by ANTLR 4.12.0
+// Generated from /home/this-user/Desktop/Compiler-Course/Phase 1/src/main/grammar/LogicPL.g4 by ANTLR 4.12.0
 package main.grammar;
-
-import ast.node.*;
-import ast.node.expression.*;
-import ast.node.statement.*;
-import ast.node.declaration.*;
-import ast.node.expression.values.*;
-import ast.node.expression.operators.*;
-import ast.type.primitiveType.*;
-import ast.type.*;
-
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -288,13 +278,6 @@ public class LogicPLBaseVisitor<T> extends AbstractParseTreeVisitor<T> implement
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitNumericValue(LogicPLParser.NumericValueContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitIdentifier(LogicPLParser.IdentifierContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

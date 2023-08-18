@@ -5,9 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb6888c6-d5e8-4ef2-bad8-df0b9f78197c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/antlr_4_10_1_complete.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPL.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPL.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPL.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPL.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPLBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPLBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPLBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPLBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPLLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPLLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPLLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPLLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPLLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPLLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPLListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/main/grammar/LogicPLVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/main/grammar/LogicPLVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/libraries/antlr_4_10_1_complete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/declaration/ArgDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/declaration/Declaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/declaration/FuncDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/declaration/MainDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/ArrayAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/BinaryExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/Expression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/FunctionCall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/Identifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/QueryExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/UnaryExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/Variable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/operators/BinaryOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/operators/UnaryOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/values/BooleanValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/values/FloatValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/values/IntValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/expression/values/Value.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/ArrayDecStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/AssignStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/ForloopStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/ImplicationStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/PredicateStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/PrintStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/ReturnStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/Statement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/node/statement/VarDecStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/type/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/type/primitiveType/BooleanType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/type/primitiveType/FloatType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/type/primitiveType/IntType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/CompileError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/Name/FunctionRedefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/Name/VarOrFunctionNotDeclared.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/Name/VariableRedefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/grammar/LogicPL.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grammar/LogicPL.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbolTable/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbolTable/SymbolTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbolTable/itemException/ItemAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbolTable/itemException/ItemNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbolTable/symbolTableItems/ArrayItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbolTable/symbolTableItems/FunctionItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbolTable/symbolTableItems/SymbolTableItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbolTable/symbolTableItems/VariableItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visitor/IVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visitor/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visitor/astPrinter/ASTPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visitor/nameAnalyzer/NameAnalyzer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 2/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/src/compileError/Type/ConditionTypeNotBool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/src/compileError/Type/FunctionNotDeclared.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/src/compileError/Type/LeftSideNotLValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/src/compileError/Type/UnsupportedOperandType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/src/compileError/Type/VarNotDeclared.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/src/visitor/typeAnalyzer/ExpressionTypeChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/src/visitor/typeAnalyzer/TypeAnalyzer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +113,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/this-user/Desktop/Compiler-Course/Phase 2",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "last_opened_file_path": "/home/this-user/Desktop/Compiler-Course/Phase 1",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Test" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="org.antlr.v4.gui.TestRig" />
       <module name="untitled" />
-      <option name="PROGRAM_PARAMETERS" value="sample/test2.txt" />
+      <option name="PROGRAM_PARAMETERS" value="main.grammar.LogicPL program -gui sample/test3.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

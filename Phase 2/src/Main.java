@@ -7,7 +7,6 @@ import main.grammar.LogicPLParser;
 import visitor.nameAnalyzer.NameAnalyzer;
 import visitor.astPrinter.ASTPrinter;
 import org.antlr.v4.runtime.*;
-import visitor.typeAnalyzer.TypeAnalyzer;
 
 public class Main {
         public static void main(String[] args) throws java.io.IOException {
@@ -22,11 +21,10 @@ public class Main {
             NameAnalyzer nameAnalyzer = new NameAnalyzer();
             nameAnalyzer.visit(program);
 
-            TypeAnalyzer typeAnalyzer = new TypeAnalyzer();
-            typeAnalyzer.visit(program);
-            if (typeAnalyzer.typeErrors.size() > 0){
-                for(CompileError compileError: typeAnalyzer.typeErrors)
+            if(nameAnalyzer.nameErrors.size() > 0){
+                for(CompileError compileError: nameAnalyzer.nameErrors){
                     System.out.println(compileError.getMessage());
+                }
                 return;
             }
 

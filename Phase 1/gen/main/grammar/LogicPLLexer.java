@@ -1,15 +1,5 @@
-// Generated from /home/yektanet/Edu/TA/PLC/CA2V8/src/main/grammar/LogicPL.g4 by ANTLR 4.12.0
+// Generated from /home/this-user/Desktop/Compiler-Course/Phase 1/src/main/grammar/LogicPL.g4 by ANTLR 4.12.0
 package main.grammar;
-
-import ast.node.*;
-import ast.node.expression.*;
-import ast.node.statement.*;
-import ast.node.declaration.*;
-import ast.node.expression.values.*;
-import ast.node.expression.operators.*;
-import ast.type.primitiveType.*;
-import ast.type.*;
-
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -31,8 +21,8 @@ public class LogicPLLexer extends Lexer {
 		TRUE=9, FALSE=10, LPAR=11, RPAR=12, COLON=13, COMMA=14, LBRACE=15, RBRACE=16, 
 		SEMICOLON=17, ASSIGN=18, LBRACKET=19, RBRACKET=20, QUARYMARK=21, ARROW=22, 
 		OR=23, AND=24, EQ=25, GT=26, LT=27, GTE=28, LTE=29, PLUS=30, MINUS=31, 
-		MULT=32, DIV=33, MOD=34, NEQ=35, NOT=36, WS=37, COMMENT=38, IDENTIFIER=39, 
-		PREDICATE_IDENTIFIER=40, INT_NUMBER=41, FLOAT_NUMBER=42;
+		MULT=32, DIV=33, MOD=34, NEQ=35, NOT=36, WS=37, COMMENT=38, ID=39, PREDICATE_IDENTIFIER=40, 
+		INT_NUMBER=41, FLOAT_NUMBER=42;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
 	};
@@ -47,7 +37,7 @@ public class LogicPLLexer extends Lexer {
 			"TRUE", "FALSE", "LPAR", "RPAR", "COLON", "COMMA", "LBRACE", "RBRACE", 
 			"SEMICOLON", "ASSIGN", "LBRACKET", "RBRACKET", "QUARYMARK", "ARROW", 
 			"OR", "AND", "EQ", "GT", "LT", "GTE", "LTE", "PLUS", "MINUS", "MULT", 
-			"DIV", "MOD", "NEQ", "NOT", "WS", "COMMENT", "IDENTIFIER", "PREDICATE_IDENTIFIER", 
+			"DIV", "MOD", "NEQ", "NOT", "WS", "COMMENT", "ID", "PREDICATE_IDENTIFIER", 
 			"INT_NUMBER", "FLOAT_NUMBER"
 		};
 	}
@@ -69,7 +59,7 @@ public class LogicPLLexer extends Lexer {
 			"FOR", "TRUE", "FALSE", "LPAR", "RPAR", "COLON", "COMMA", "LBRACE", "RBRACE", 
 			"SEMICOLON", "ASSIGN", "LBRACKET", "RBRACKET", "QUARYMARK", "ARROW", 
 			"OR", "AND", "EQ", "GT", "LT", "GTE", "LTE", "PLUS", "MINUS", "MULT", 
-			"DIV", "MOD", "NEQ", "NOT", "WS", "COMMENT", "IDENTIFIER", "PREDICATE_IDENTIFIER", 
+			"DIV", "MOD", "NEQ", "NOT", "WS", "COMMENT", "ID", "PREDICATE_IDENTIFIER", 
 			"INT_NUMBER", "FLOAT_NUMBER"
 		};
 	}

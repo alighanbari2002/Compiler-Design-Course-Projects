@@ -1,15 +1,5 @@
-// Generated from /home/yektanet/Edu/TA/PLC/CA2V8/src/main/grammar/LogicPL.g4 by ANTLR 4.12.0
+// Generated from /home/this-user/Desktop/Compiler-Course/Phase 1/src/main/grammar/LogicPL.g4 by ANTLR 4.12.0
 package main.grammar;
-
-import ast.node.*;
-import ast.node.expression.*;
-import ast.node.statement.*;
-import ast.node.declaration.*;
-import ast.node.expression.values.*;
-import ast.node.expression.operators.*;
-import ast.type.primitiveType.*;
-import ast.type.*;
-
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -478,18 +468,6 @@ public class LogicPLBaseListener implements LogicPLListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitNumericValue(LogicPLParser.NumericValueContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterIdentifier(LogicPLParser.IdentifierContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitIdentifier(LogicPLParser.IdentifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -1,15 +1,5 @@
-// Generated from /home/yektanet/Edu/TA/PLC/CA2V8/src/main/grammar/LogicPL.g4 by ANTLR 4.12.0
+// Generated from /home/this-user/Desktop/Compiler-Course/Phase 1/src/main/grammar/LogicPL.g4 by ANTLR 4.12.0
 package main.grammar;
-
-import ast.node.*;
-import ast.node.expression.*;
-import ast.node.statement.*;
-import ast.node.declaration.*;
-import ast.node.expression.values.*;
-import ast.node.expression.operators.*;
-import ast.type.primitiveType.*;
-import ast.type.*;
-
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -248,12 +238,6 @@ public interface LogicPLVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitNumericValue(LogicPLParser.NumericValueContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link LogicPLParser#identifier}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitIdentifier(LogicPLParser.IdentifierContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link LogicPLParser#predicateIdentifier}.
 	 * @param ctx the parse tree

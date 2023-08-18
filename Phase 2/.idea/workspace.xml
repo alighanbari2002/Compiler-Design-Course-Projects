@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb6888c6-d5e8-4ef2-bad8-df0b9f78197c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Phase 1/.idea/libraries/antlr_4_10_1_complete.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 1/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 1/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/antlr_4_10_1_complete.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/antlr_4_10_1_complete1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 3/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 3/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 4/.idea/libraries/antlr_4_12_0_complete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 4/.idea/libraries/antlr_4_12_0_complete.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 4/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 4/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Phase 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/Type/ConditionTypeNotBool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/Type/FunctionNotDeclared.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/Type/LeftSideNotLValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/Type/UnsupportedOperandType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compileError/Type/VarNotDeclared.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visitor/typeAnalyzer/ExpressionTypeChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visitor/typeAnalyzer/TypeAnalyzer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +45,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "/home/this-user/Desktop/Compiler-Course/utilities/antlr-4.12.0-complete.jar",
-    "project.structure.last.edited": "Libraries",
+    "last_opened_file_path": "/home/this-user/Desktop/Compiler-Course/Phase 1",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
@@ -61,7 +55,7 @@
     <configuration name="Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="untitled" />
-      <option name="PROGRAM_PARAMETERS" value="sample/test3.txt" />
+      <option name="PROGRAM_PARAMETERS" value="sample/test2.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

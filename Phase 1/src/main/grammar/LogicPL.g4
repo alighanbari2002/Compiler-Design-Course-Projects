@@ -1,39 +1,22 @@
 grammar LogicPL;
 
-@header{
-import ast.node.*;
-import ast.node.expression.*;
-import ast.node.statement.*;
-import ast.node.declaration.*;
-import ast.node.expression.values.*;
-import ast.node.expression.operators.*;
-import ast.type.primitiveType.*;
-import ast.type.*;
-}
-
-program returns[Program p]:
-    {$p = new Program(); $p.setLine(0);}
-    (f = functionDec {$p.addFunc($f.functionDeclaration);})*
-    main = mainBlock {$p.setMain($main.main) ;}
+program:
+    (functionDec)*
+    mainBlock
     ;
 
-functionDec returns[FuncDeclaration functionDeclaration]:
-    {ArrayList<ArgDeclaration> args = new ArrayList<>();
-     ArrayList<Statement> statements = new ArrayList<>();}
-    FUNCTION name = identifier
-    LPAR (arg1 = functionVarDec {args.add($arg1.argDeclaration);} (COMMA arg = functionVarDec {args.add($arg.argDeclaration);})*)? RPAR COLON returnType = type
-    LBRACE ((stmt = statement {statements.add($stmt.statementRet);})+) RBRACE
-    {$functionDeclaration = new FuncDeclaration($name.identifierRet, $returnType.typeRet, args, statements); $functionDeclaration.setLine($name.identifierRet.getLine());}
+functionDec:
+    FUNCTION ID {System.out.println("FunctionDec: " + $ID.getText());}
+    LPAR (functionVarDec (COMMA functionVarDec)*)? RPAR COLON type
+    LBRACE ((statement)+) RBRACE
     ;
 
-functionVarDec returns [ArgDeclaration argDeclaration]:
-    t = type arg_iden = identifier {$argDeclaration = new ArgDeclaration($arg_iden.identifierRet, $t.typeRet); $argDeclaration.setLine($arg_iden.identifierRet.getLine());}
+functionVarDec:
+    type ID {System.out.println("ArgumentDec: " + $ID.getText());}
     ;
 
-mainBlock returns [MainDeclaration main]:
-    {ArrayList<Statement> mainStmts = new ArrayList<>();}
-    m = MAIN LBRACE (s = statement {mainStmts.add($s.statementRet);})+ RBRACE
-    {$main = new MainDeclaration(mainStmts); $main.setLine($m.getLine());}
+mainBlock:
+    {System.out.println("MainBody");} MAIN LBRACE (statement)+ RBRACE
     ;
 
 statement:
@@ -47,7 +30,7 @@ assignSmt:
     ;
 
 variable:
-    identifier | identifier LBRACKET expression RBRACKET
+    ID | ID LBRACKET expression RBRACKET
     ;
 
 localVarDeclaration:
@@ -56,11 +39,11 @@ localVarDeclaration:
     ;
 
 varDeclaration:
-    type identifier (ASSIGN expression )? SEMICOLON
+    type ID {System.out.println("VarDec: " + $ID.getText());} (ASSIGN expression )? SEMICOLON
     ;
 
 arrayDeclaration:
-    type LBRACKET INT_NUMBER RBRACKET identifier
+    type LBRACKET INT_NUMBER RBRACKET ID {System.out.println("VarDec: " + $ID.getText());}
     (arrayInitialValue )? SEMICOLON
     ;
 
@@ -69,11 +52,11 @@ arrayInitialValue:
     ;
 
 arrayList:
-    LBRACKET ( value | identifier ) (COMMA ( value | identifier ))* RBRACKET
+    LBRACKET ( value | ID ) (COMMA ( value | ID ))* RBRACKET
     ;
 
 printSmt:
-    PRINT LPAR printExpr RPAR SEMICOLON
+    PRINT {System.out.println("Built-in: print");} LPAR printExpr RPAR SEMICOLON
     ;
 
 printExpr:
@@ -95,11 +78,11 @@ queryType2:
     ;
 
 returnSmt:
-    RETURN (value  | identifier)? SEMICOLON
+    RETURN {System.out.println("Return");} (value  | ID)? SEMICOLON
     ;
 
 forLoop:
-    FOR LPAR identifier COLON identifier RPAR
+    {System.out.println("Loop: for");} FOR LPAR ID COLON ID RPAR
     LBRACE ((statement)*) RBRACE
     ;
 
@@ -108,7 +91,7 @@ predicate:
     ;
 
 implication:
-    LPAR expression RPAR ARROW LPAR ((statement)+) RPAR
+    {System.out.println("Implication");} LPAR expression RPAR ARROW LPAR ((statement)+) RPAR
     ;
 
 expression:
@@ -116,7 +99,7 @@ expression:
     ;
 
 expression2:
-    OR andExpr expression2
+    OR andExpr expression2 {System.out.println("Operator: " + $OR.getText());}
     |
     ;
 
@@ -125,7 +108,7 @@ andExpr:
     ;
 
 andExpr2:
-    AND eqExpr andExpr2
+    AND eqExpr andExpr2 {System.out.println("Operator: " + $AND.getText());}
     |
     ;
 
@@ -134,7 +117,7 @@ eqExpr:
     ;
 
 eqExpr2:
-    ( EQ | NEQ ) compExpr eqExpr2
+    (op = ( EQ | NEQ )) compExpr eqExpr2 {System.out.println("Operator: " + $op.getText());}
     |
     ;
 
@@ -143,7 +126,7 @@ compExpr:
     ;
 
 compExpr2:
-    ( LT | LTE | GT | GTE) additive compExpr2
+    (op = ( LT | LTE | GT | GTE)) additive compExpr2 {System.out.println("Operator: " + $op.getText());}
     |
     ;
 
@@ -152,7 +135,7 @@ additive:
     ;
 
 additive2:
-    ( PLUS | MINUS ) multicative additive2
+    (op = ( PLUS | MINUS )) multicative additive2 {System.out.println("Operator: " + $op.getText());}
     |
     ;
 
@@ -161,14 +144,14 @@ multicative:
     ;
 
 multicative2:
-    ( MULT | MOD | DIV ) unary multicative2
+    (op = ( MULT | MOD | DIV )) unary multicative2 {System.out.println("Operator: " + $op.getText());}
     |
     ;
 
 unary:
     other
     |
-     ( PLUS | MINUS | NOT ) other
+     (op = ( PLUS | MINUS | NOT )) {System.out.println("Operator: " + $op.getText());} other
     ;
 
 other:
@@ -177,7 +160,7 @@ other:
     ;
 
 functionCall:
-    identifier LPAR (expression (COMMA expression)*)? RPAR
+    {System.out.println("FunctionCall");} ID LPAR (expression (COMMA expression)*)? RPAR
     ;
 
 value:
@@ -192,12 +175,8 @@ numericValue:
     | FLOAT_NUMBER
     ;
 
-identifier:
-    IDENTIFIER
-    ;
-
 predicateIdentifier:
-    PREDICATE_IDENTIFIER
+    PREDICATE_IDENTIFIER {System.out.println("Predicate: " + $PREDICATE_IDENTIFIER.getText());}
     ;
 
 type:
@@ -251,7 +230,7 @@ NOT: '!';
 WS : [ \t\r\n]+ -> skip ;
 COMMENT : '#' ~[\r\n]* -> skip ;
 
-IDENTIFIER : [a-z][a-zA-Z0-9_]* ;
+ID : [a-z][a-zA-Z0-9_]* ;
 PREDICATE_IDENTIFIER : [A-Z][a-zA-Z0-9]* ;
 INT_NUMBER : [0-9]+;
 FLOAT_NUMBER: ([0-9]*[.])?[0-9]+;

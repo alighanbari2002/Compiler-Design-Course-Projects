@@ -11,7 +11,8 @@
 ## About
 During 4 phases, a compiler for [LogicPL programming language](/LogicPL%20Document.pdf) has been implemented.
 
-> this is a tip
+> Make sure to add a java developement environment to your project before running it.\
+> For example in Intellij after opening your project you can head over to `File > Project Structure > Project` and from the SDK menu select a software development kit that you previously installed.
 
 ## Projects:
 

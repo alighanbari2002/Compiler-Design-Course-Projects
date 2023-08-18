@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d25aef5-d80b-4abf-b31c-875971cf567a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.j" beforeDir="false" afterPath="$PROJECT_DIR$/result.j" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/code.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/code.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 1/.idea/libraries/antlr_4_10_1_complete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 1/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 1/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/.idea/libraries/antlr_4_10_1_complete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/.idea/libraries/antlr_4_10_1_complete1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase 3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/antlr_4_12_0_complete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_12_0_complete.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,20 +34,23 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2R9qtRMNv6NC9ky5yUAm4fVSVzL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/this-user/Desktop/Compiler-CA4&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/this-user/Desktop/Compiler-Course/Phase 2",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="cgenTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />

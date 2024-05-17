@@ -1,6 +1,6 @@
-# Compiler Design Course Projects
+# Compiler and Programming Languages Design Course Projects
 
-- [Compiler Design Course Projects](#compiler-design-course-projects)
+- [Compiler and Programming Languages Design Course Projects](#compiler-and-programming-languages-design-course-projects)
   - [About](#about)
   - [Projects](#projects)
     - [Phase 1](#phase-1)
@@ -9,8 +9,9 @@
     - [Phase 4](#phase-4)
 
 ## About
-During 4 phases, a compiler for [LogicPL programming language](/LogicPL%20Document.pdf) has been implemented.
+During 4 phases, a compiler for [LogicPL programming language](/LogicPL_Document.pdf) has been implemented.
 
+> [!TIP]
 > Make sure to add a java developement environment to your project before running it.\
 > For example in Intellij after opening your project you can head over to `File > Project Structure > Project` and from the SDK menu select a software development kit that you previously installed.
 
